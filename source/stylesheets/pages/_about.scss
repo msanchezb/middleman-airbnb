@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  background-image: linear-gradient(0deg, white 50%, $light-gray 50%);
+  @include gradient;
   img {
     width: 150px;
     box-shadow: 1px 1px 5px $light-gray;
@@ -28,6 +28,6 @@
     font-size: 15px;
   }
   .fa-heart {
-    color: $red;
+    color: #D23333;
   }
 }

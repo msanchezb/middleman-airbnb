@@ -1,17 +1,24 @@
 #home {
-  background-color: $red;
+  background-color: $light-gray;
   color: white;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  text-align: center;
+  text-align: left;
   p {
     margin-top: 1.5em;
   }
   a {
-    color: $black;
+    color: $light-red;
     font-weight: bold;
     font-size: 16px;
   }
 }
+
+.container {
+  width: 100%;
+  h2 {
+    text-align: center;
+  }
+}
+

@@ -18,7 +18,7 @@ $blue: #468FCC;
 $light-blue: #7768AE;
 $lighter-blue: #8DC0EB;
 $red: #E15554;
-$light-red: #E15554;
+$light-red: #E67373;
 $lighter-red: #EB9292;
 $light-yellow: #E1BC29;
 $yellow: #E1BC29;
@@ -33,4 +33,12 @@ $purple: #7768AE;
 $black: #01161E;
 $orange: #F75C03;
 $gray: #5D737E;
-$light-gray: #D1D1D1;
+$light-gray: #F4F4F4;
+$dark-gray: #5F5F5F;
+
+
+@mixin gradient {
+  background-image: linear-gradient(to bottom, rgba(209,209,209,1) 0%,rgba(255,26,0,1) 100%);
+}
+
+

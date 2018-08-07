@@ -1,0 +1,17 @@
+.profile {
+  display: flex;
+  align-items: center;
+  color: $dark-gray;
+}
+
+.profile-user {
+  padding: 40px;
+}
+
+.profile-description {
+  padding: 10px;
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+}

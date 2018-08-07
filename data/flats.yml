@@ -1,0 +1,80 @@
+ssaunier:
+  name: "Sebastien's home"
+  description: "Charming room in Montmartre"
+  city_name: "Paris, France"
+  city_slug: "paris"
+  wifi: false
+  rating: 4
+  details: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
+  number_people: 2
+  number_bathrooms: 1
+  number_bedrooms: 1
+  number_beds: 1
+  bed_type: "Real"
+  property_type: "Appartment"
+  room_type: "Entire home/apt"
+  amenities: ["kitchen", "wifi", "tv", "welcome_drink"]
+papillard:
+  name: "Boris' home"
+  description: Small flat in Tokyo
+  city_name: "Tokyo, Japan"
+  city_slug: "tokyo"
+  wifi: true
+  rating: 3
+  details: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
+  number_people: 2
+  number_bathrooms: 1
+  number_bedrooms: 1
+  number_beds: 1
+  bed_type: "Real"
+  property_type: "Appartment"
+  room_type: "Entire home/apt"
+  amenities: ["kitchen", "wifi", "tv", "drink"]
+monsieurpaillard:
+  name: Romain's home
+  description: Nice flat in Piccadilly
+  city_name: "London, UK"
+  city_slug: "london"
+  wifi: true
+  rating: 5
+  details: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
+  number_people: 2
+  number_bathrooms: 1
+  number_bedrooms: 1
+  number_beds: 1
+  bed_type: "Real"
+  property_type: "Appartment"
+  room_type: "Entire home/apt"
+  amenities: ["kitchen", "wifi", "tv", "drink"]
+msanchezb:
+  name: Maria's home
+  description: Compfy place in Barcelona
+  city_name: "Barcelona, Spain"
+  city_slug: "barcelona"
+  wifi: true
+  rating: 3
+  details: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
+  number_people: 2
+  number_bathrooms: 1
+  number_bedrooms: 1
+  number_beds: 1
+  bed_type: "Real"
+  property_type: "Appartment"
+  room_type: "Entire home/apt"
+  amenities: ["kitchen", "wifi", "tv", "drink"]
+ChristianBell1995:
+  name: Christian's home
+  description: Cozy flat in Berlin
+  city_name: "Berlin, Germany"
+  city_slug: "berlin"
+  wifi: true
+  rating: 5
+  details: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
+  number_people: 2
+  number_bathrooms: 1
+  number_bedrooms: 1
+  number_beds: 1
+  bed_type: "Real"
+  property_type: "Appartment"
+  room_type: "Entire home/apt"
+  amenities: ["kitchen", "wifi", "tv", "drink"]

@@ -1,0 +1,97 @@
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+
+
+<div id="show">
+  <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+  </div>
+
+
+  <div class="container-flex">
+    <div class="profile-container">
+      <div class="profile">
+        <div class="profile-user text-center">
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "avatar-xlarge" %>
+          <p><%= owner.capitalize %></p>
+        </div>
+        <div class="profile-description">
+          <h3><%= flat.description %></h3>
+          <p><%= flat.city_name %></p>
+          <ul class="list-inline">
+            <% (1..5).each do |num|%>
+                  <% if flat.rating >= num %>
+                  <li><i class="fa fa-star star-yellow"></i></li>
+              <% else %>
+                <li><i class="fa fa-star star-gray"></i></li>
+              <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <%= partial "flats/form" %>
+
+  </div>
+  <div class="gray-wapper data">
+    <div class="description">
+      <h4>About this flat</h4>
+      <h5><%= flat.details %></h5>
+      </div>
+    <div class="details">
+      <p><em>The Space</em></p>
+      <ul>
+        <li>
+          <p>Accomodates:
+            <em><%= flat.number_people %></em>
+          </p>
+        </li>
+        <li>
+          <p>Bathrooms:
+            <em><%= flat.number_bathrooms %></em>
+          </p>
+        </li>
+        <li>
+          <p>Bedrooms:
+            <em><%= flat.number_bedrooms %></em>
+          </p>
+        </li>
+        <li>
+          <p>Property type:
+          <em><%= flat.property_type %></em>
+        </li>
+        <li>
+          <p>Room type:
+            <em><%= flat.room_type %></em>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="amenities">
+      <p><em>Amenities</em></p>
+      <ul>
+        <% flat.amenities.each do |amenity| %>
+          <li>
+            <% case amenity%>
+            <% when "kitchen"%>
+            <i class="fas fa-utensils"></i> Kitchen
+            <% when "wifi"%>
+            <i class="fas fa-wifi"></i>  Wifi
+            <% when "tv"%>
+            <i class="fas fa-tv"></i> TV
+            <% when "drink"%>
+            <i class="fas fa-cocktail"></i> Welcome drink
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

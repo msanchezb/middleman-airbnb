@@ -1,15 +1,40 @@
 ---
 title: Le Wagon - Middleman
 ---
-
+<%= partial "layouts/banner" %>
 <div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+  <div class="container">
+    <h2>Recent flats</h2>
+    <div class="cards">
+      <div class="row">
+
+        <% data.flats.each do |flat, info| %>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <% link =  'https://kitt.lewagon.com/placeholder/cities/' + info.city_slug%>
+            <div style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= link %>);" class="card">
+              <a href="/flats/<%= flat %>.html" class="card-link"></a>
+              <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{flat}", class: "card-user" %>
+              <div class="card-category">
+                <h3><%= info.city_slug.capitalize %></h3>
+              </div>
+              <div class="card-description">
+                <h2><%= info.name %></h2>
+                <p><%= info.description %></p>
+                <ul class="list-inline">
+
+                  <% (1..5).each do |num|%>
+                    <% if info.rating >= num %>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                    <% else %>
+                      <li><i class="fa fa-star star-gray"></i></li>
+                    <% end %>
+                  <% end %>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
