@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Le Wagon - Middleman</title>
-    <link href="stylesheets/application-9ab7d53d.css" rel="stylesheet" />
+    <link href="stylesheets/application-e1572232.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
     <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
@@ -52,15 +52,139 @@
   </div>
 </div>
 
-    <div id="home">
-  <div class="home-content">
-    <img src="images/logo-acc9c0ec.png" width="200" alt="Logo" />
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <a href="about.html">More about this template</a>
-    </p>
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://www.unsplash.it/1000/900');">
+  <div class="banner-content">
+    <h1>WELCOME HOME</h1>
+    <p>Rent unique places to stay from local hosts in 190+ countries.</p>
+    <div class="form-inline">
+  <form action="#" class="form-inline">
+    <input type="text" name="checkin" id="checkin" placeholder="Check In Date" class="form-control input-lg">
+    <input type="text" name="checkout" id="checkout" placeholder="Check Out" class="form-control input-lg">
+    <select id="favorite" name="method" class="form-control input-lg">
+      <option value="one">1 person</option>
+      <option value="two">2 people</option>
+      <option value="three">3 people</option>
+    </select>
+    <input type="submit" class="btn btn-primary form-control input-lg" value="Search">
+  </form>
+</div>
+
+  </div>
+</div>
+
+<div id="home">
+  <div class="container">
+    <h2>Recent flats</h2>
+    <div class="cards">
+      <div class="row">
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(https://kitt.lewagon.com/placeholder/cities/paris);" class="card">
+              <a href="/flats/ssaunier.html" class="card-link"></a>
+              <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="card-user" alt="Ssaunier" />
+              <div class="card-category">
+                <h3>Paris</h3>
+              </div>
+              <div class="card-description">
+                <h2>Sebastien's home</h2>
+                <p>Charming room in Montmartre</p>
+                <ul class="list-inline">
+
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                      <li><i class="fa fa-star star-gray"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(https://kitt.lewagon.com/placeholder/cities/tokyo);" class="card">
+              <a href="/flats/papillard.html" class="card-link"></a>
+              <img src="https://kitt.lewagon.com/placeholder/users/papillard" class="card-user" alt="Papillard" />
+              <div class="card-category">
+                <h3>Tokyo</h3>
+              </div>
+              <div class="card-description">
+                <h2>Boris' home</h2>
+                <p>Small flat in Tokyo</p>
+                <ul class="list-inline">
+
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                      <li><i class="fa fa-star star-gray"></i></li>
+                      <li><i class="fa fa-star star-gray"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(https://kitt.lewagon.com/placeholder/cities/london);" class="card">
+              <a href="/flats/monsieurpaillard.html" class="card-link"></a>
+              <img src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard" class="card-user" alt="Monsieurpaillard" />
+              <div class="card-category">
+                <h3>London</h3>
+              </div>
+              <div class="card-description">
+                <h2>Romain's home</h2>
+                <p>Nice flat in Piccadilly</p>
+                <ul class="list-inline">
+
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(https://kitt.lewagon.com/placeholder/cities/barcelona);" class="card">
+              <a href="/flats/msanchezb.html" class="card-link"></a>
+              <img src="https://kitt.lewagon.com/placeholder/users/msanchezb" class="card-user" alt="Msanchezb" />
+              <div class="card-category">
+                <h3>Barcelona</h3>
+              </div>
+              <div class="card-description">
+                <h2>Maria's home</h2>
+                <p>Compfy place in Barcelona</p>
+                <ul class="list-inline">
+
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                      <li><i class="fa fa-star star-gray"></i></li>
+                      <li><i class="fa fa-star star-gray"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(https://kitt.lewagon.com/placeholder/cities/berlin);" class="card">
+              <a href="/flats/ChristianBell1995.html" class="card-link"></a>
+              <img src="https://kitt.lewagon.com/placeholder/users/ChristianBell1995" class="card-user" alt="Christianbell1995" />
+              <div class="card-category">
+                <h3>Berlin</h3>
+              </div>
+              <div class="card-description">
+                <h2>Christian's home</h2>
+                <p>Cozy flat in Berlin</p>
+                <ul class="list-inline">
+
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                        <li><i class="fa fa-star star-yellow"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
   </div>
 </div>
 
